@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="title">Sweetie Selector</h1>
+
+    <div class="breed-selector">
+      <form action="#" id="breed-select">
+        <label for="breed-list" id="list-title">Breeds</label>
+        <input list="breed-list" id="breed-choice">
+        <datalist id="breed-list">
+          <!-- breeds go here as options -->
+        </datalist>
+        <button type="submit">Go!</button>
+      </form>
+    </div>
+
+    <div id="breed-card-container">
+      <h1 id="instructions">Select a breed to see a pic of a true sweetie </h1>
+    </div>
+
+  </div>
+
+  <script src="src/breed.js" charset="utf-8"></script>
+  <script src="src/adapter.js" charset="utf-8"></script>
+  <script src="src/index.js" charset="utf-8"></script>
+</body>
+</html>
