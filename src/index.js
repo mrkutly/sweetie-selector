@@ -1,10 +1,11 @@
 Adapter.getBreedsList().then(list => renderBreedList(allBreeds))
-document.addEventListener('click', handleNewPic)
 const breedSelect = document.querySelector('#breed-select')
-breedSelect.addEventListener('submit', handleNewBreedCard)
-
 const breedCardContainer = document.querySelector('#breed-card-container')
 const breedList = document.querySelector('#breed-list')
+
+document.addEventListener('click', handleNewPic)
+breedSelect.addEventListener('submit', handleNewBreedCard)
+
 
 function handleNewBreedCard(e) {
   e.preventDefault()
