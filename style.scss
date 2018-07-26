@@ -53,6 +53,11 @@ button:active {
   font-size: 2em;
 }
 
+.sweeties {
+  display: block;
+  margin: 0 auto;
+}
+
 #list-title {
   font-size: 1.2em;
   color: $rose;
@@ -68,4 +73,10 @@ button:active {
 #instructions {
   margin-top: 50px;
   text-align: center;
+}
+
+#sweeties-container {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1200px;
 }

@@ -40,6 +40,10 @@ button:active {
 .breed-name {
   font-size: 2em; }
 
+.sweeties {
+  display: block;
+  margin: 0 auto; }
+
 #list-title {
   font-size: 1.2em;
   color: rgba(239, 97, 97, 0.46); }
@@ -53,5 +57,10 @@ button:active {
 #instructions {
   margin-top: 50px;
   text-align: center; }
+
+#sweeties-container {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1200px; }
 
 /*# sourceMappingURL=style.css.map */
