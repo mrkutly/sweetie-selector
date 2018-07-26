@@ -13,8 +13,7 @@ function renderSweetie(url) {
   let fileType = url.slice(url.length - 3)
 
   if(fileType === 'mp4'){
-    debugger
-    template = `<video controls muted src="${url}" width="600" height="400" class="sweeties"></video>`
+    template = `<video controls src="${url}" width="600" height="400" class="sweeties"></video>`
   } else {
     template = `<img src="${url}" class="sweeties"></img>`
   }
