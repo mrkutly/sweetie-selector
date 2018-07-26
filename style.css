@@ -22,6 +22,12 @@ img {
   border-style: solid;
   border-color: rgba(239, 97, 97, 0.46); }
 
+video {
+  max-width: 80%;
+  padding: 5px;
+  border-style: solid;
+  border-color: rgba(239, 97, 97, 0.46); }
+
 input {
   outline-color: #af89c7; }
 
@@ -57,7 +63,8 @@ button:active {
 
 .sweeties {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 2em; }
 
 .link-container {
   margin-top: 50px;
