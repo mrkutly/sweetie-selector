@@ -10,9 +10,9 @@ function getAndRenderSweetie() {
 
 function renderSweetie(url) {
   let template
-  let fileType = url.slice(url.length - 3)
+  let fileType = url.slice(url.length - 4)
 
-  if(fileType === 'mp4'){
+  if(fileType === '.mp4' || fileType === 'webm'){
     template = `<video controls src="${url}" width="600" height="400" class="sweeties"></video>`
   } else {
     template = `<img src="${url}" class="sweeties"></img>`
