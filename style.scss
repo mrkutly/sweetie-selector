@@ -5,6 +5,25 @@ body {
   color: $rose;
 }
 
+a {
+  color: $rose;
+  cursor: pointer;
+}
+
+a:hover {
+  text-shadow: 1px 1px 5px $lavender;
+}
+
+a:link, a:visited {
+  color: $rose;
+  text-decoration: none;
+}
+
+a:link:active, a:visited:active {
+  color: $lavender;
+  text-decoration: none;
+}
+
 img {
   max-width: 80%;
   padding: 5px;
@@ -56,6 +75,11 @@ button:active {
 .sweeties {
   display: block;
   margin: 0 auto;
+}
+
+.link-container {
+  margin-top: 50px;
+  text-align: center;
 }
 
 #list-title {

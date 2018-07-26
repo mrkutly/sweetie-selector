@@ -1,6 +1,21 @@
 body {
   color: rgba(239, 97, 97, 0.46); }
 
+a {
+  color: rgba(239, 97, 97, 0.46);
+  cursor: pointer; }
+
+a:hover {
+  text-shadow: 1px 1px 5px #af89c7; }
+
+a:link, a:visited {
+  color: rgba(239, 97, 97, 0.46);
+  text-decoration: none; }
+
+a:link:active, a:visited:active {
+  color: #af89c7;
+  text-decoration: none; }
+
 img {
   max-width: 80%;
   padding: 5px;
@@ -43,6 +58,10 @@ button:active {
 .sweeties {
   display: block;
   margin: 0 auto; }
+
+.link-container {
+  margin-top: 50px;
+  text-align: center; }
 
 #list-title {
   font-size: 1.2em;
