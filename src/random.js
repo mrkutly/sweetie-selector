@@ -2,7 +2,7 @@ const sweetiesContainerEl = document.querySelector('#sweeties-container')
 
 getAndRenderSweetie()
 
-window.addEventListener('scroll', handleScroll)
+window.addEventListener('scroll', throttle(handleScroll, 200))
 
 function getAndRenderSweetie() {
   Adapter.getSweetie().then(sweetie => renderSweetie(sweetie.url))
@@ -13,7 +13,7 @@ function renderSweetie(url) {
   let fileType = url.slice(url.length - 4)
 
   if(fileType === '.mp4' || fileType === 'webm'){
-    template = `<video controls src="${url}" width="600" height="400" class="sweeties"></video>`
+    template = `<video controls src="${url}" width="1000" height="666" class="sweeties"></video>`
   } else {
     template = `<img src="${url}" class="sweeties"></img>`
   }
@@ -23,5 +23,16 @@ function renderSweetie(url) {
 function handleScroll() {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
     getAndRenderSweetie()
+  }
+}
+
+function throttle(func, wait) {
+  let time = Date.now()
+
+  return function() {
+    if((time + wait - Date.now()) < 0){
+      func()
+      time = Date.now()
+    }
   }
 }
